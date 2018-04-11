@@ -1,0 +1,32 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#vrmode{
+    display: none;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color:rgb(190, 42, 42);
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+div.center { text-align: center  }
+.inputfile:focus + label,
+.inputfile + label:hover {
+    color: rgb(100, 6, 6);
+}
+
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
